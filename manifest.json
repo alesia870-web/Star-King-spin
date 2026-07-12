@@ -1,4 +1,5 @@
 {
+  
   "name": "Spin Kingdom",
   "short_name": "Spin Kingdom",
   "start_url": ".",
@@ -14,9 +15,10 @@
       "type": "image/png"
     },
     {
+      "icons": [{"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}]
       "src": "icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
-    }
+     "type": "image/png"
+    } 
   ]
 }
