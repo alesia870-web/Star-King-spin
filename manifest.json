@@ -1,14 +1,13 @@
 {
   "name": "Spin Kingdom",
-  "short_name": "Spin Kingdom",
+  "short_name": "SpinKing",
   "id": "/Star-King-spin/",
   "start_url": "/Star-King-spin/",
   "scope": "/Star-King-spin/",
   "display": "standalone",
-  "orientation": "portrait",
   "background_color": "#1a0d40",
   "theme_color": "#1a0d40",
-  "description": "Rotește, construiește sate și colectează cărți!",
+  "description": "Spin Kingdom - joc simplu instalabil pe telefon",
   "icons": [
     {
       "src": "icon-192.png",
