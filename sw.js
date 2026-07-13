@@ -1,4 +1,4 @@
-var CACHE = 'spin-kingdom-v2';
+var CACHE = 'spin-kingdom-simple-v1';
 var URLS = [
   './',
   './index.html',
@@ -9,13 +9,11 @@ var URLS = [
 
 self.addEventListener('install', function (e) {
   e.waitUntil(
-    caches.open(CACHE)
-      .then(function (cache) {
-        return cache.addAll(URLS);
-      })
-      .then(function () {
-        return self.skipWaiting();
-      })
+    caches.open(CACHE).then(function (cache) {
+      return cache.addAll(URLS);
+    }).then(function () {
+      return self.skipWaiting();
+    })
   );
 });
 
@@ -39,8 +37,8 @@ self.addEventListener('fetch', function (e) {
   if (e.request.method !== 'GET') return;
 
   e.respondWith(
-    caches.match(e.request).then(function (r) {
-      return r || fetch(e.request);
+    caches.match(e.request).then(function (response) {
+      return response || fetch(e.request);
     })
   );
 });
