@@ -1,8 +1,9 @@
 {
-  
   "name": "Spin Kingdom",
   "short_name": "Spin Kingdom",
-  "start_url": ".",
+  "id": "/Star-King-spin/",
+  "start_url": "/Star-King-spin/",
+  "scope": "/Star-King-spin/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#1a0d40",
@@ -15,10 +16,10 @@
       "type": "image/png"
     },
     {
-      "icons": [{"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}]
       "src": "icon-512.png",
       "sizes": "512x512",
-     "type": "image/png"
-    } 
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }
